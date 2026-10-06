@@ -224,7 +224,9 @@ a:hover { color: var(--color-accent-dark); text-decoration: underline; }
 .organizer-info p { font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.45; }
 
 .organizer-info { width: 100%; }
-.organizer-info a { display: block; margin-top: 4px; font-size: 0.85rem; overflow-wrap: break-word; }
+.organizer-info h4 a { color: inherit; }
+.organizer-info h4 a:hover,
+.organizer-card:has(> a:hover) h4 a { color: var(--color-accent); text-decoration: none; }
 
 /* Email shown as text (muted @ and .) rather than a mailto link, to deter scrapers */
 .email-obfuscated {
@@ -259,6 +261,8 @@ a:hover { color: var(--color-accent-dark); text-decoration: underline; }
 .schedule-session { font-weight: 600; }
 .schedule-row.is-break .schedule-session { font-weight: 400; font-style: italic; }
 .schedule-detail { color: var(--color-text-secondary); }
+
+
 
 /* ---- Footer ---- */
 .footer {
